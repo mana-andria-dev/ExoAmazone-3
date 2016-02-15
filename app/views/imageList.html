@@ -1,0 +1,19 @@
+<div>
+
+	<p *ngIf="!people" class="center">
+		<img src="../../images/loading.gif">
+	</p>
+
+	<div class="" *ngIf="people">
+		<div *ngFor="#t of people" class="span3 well">
+			<img src="{{link}}{{t}}" class="img-polaroid imgline"><br>
+			<button class="btn btn-success" [disabled]="true">
+				Afficher
+			</button>
+			<button class="btn btn-danger pull-right" [disabled]="true">
+				Supprimer
+			</button>			
+		</div>
+	</div>
+
+</div>
